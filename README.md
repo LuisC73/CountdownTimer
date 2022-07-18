@@ -9,8 +9,6 @@
   </h3>
 </div>
 
-## Overview
-
 ![Design preview for the Launch countdown timer coding challenge](./src/design/desktop-preview.jpg)
 
 ### Built With
