@@ -108,6 +108,7 @@ body {
 .timer {
   position: relative;
   background: url("../../images/bg-stars.svg") no-repeat center;
+  background-size: contain;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -224,12 +225,19 @@ body {
   z-index: 3;
 }
 .timer__icon {
-  width: 1.2rem;
+  font-size: 1.5rem;
   margin: 1rem;
+  cursor: pointer;
+  color: hsl(237deg, 18%, 59%);
+  transition: 0.3s;
+}
+.timer__icon:hover {
+  color: hsl(345deg, 95%, 68%);
+  transform: scale(1.2);
 }
 @media screen and (max-width: 768px) {
   .timer__icon {
-    width: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 .timer__hills {

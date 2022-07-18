@@ -3,7 +3,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://luisc73.github.io/InteractiveRating/">
+    <a href="https://luisc73.github.io/CountdownTimer/">
       Ingresar
     </a>
   </h3>
@@ -24,6 +24,6 @@
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/LuisC73/InteractiveRating.git
+$ git clone https://github.com/LuisC73/CountdownTimer.git
 
 ```
