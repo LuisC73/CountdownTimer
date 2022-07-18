@@ -1,0 +1,128 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.timer{
+    position: relative;
+    background: url('../../images/bg-stars.svg') no-repeat center;
+    width: 100vw;
+    height: 100vh;
+    @include mixin.flex(flex-start,center,column);
+    color: vars.$white;
+
+    @include mixin.mediaMovil(){
+        padding: 0 2rem;
+        @include mixin.flex(center,center,column);
+    }
+
+    &__h1{
+        text-align: center;
+        font-size: 1rem;
+        color: inherit;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: .5rem;
+        margin: 6rem 0 3rem 0;
+
+        @include mixin.mediaMovil(){
+            font-size: 1.2rem;
+            margin: 0 0 3rem 0;
+        }
+    }
+
+    &__countdown{
+        @include mixin.flex(space-around,center,row);
+        text-align: center;
+
+        @include mixin.mediaMovil(){ margin-bottom: 12rem;}
+    }
+
+    &__div{
+        margin: .9rem;
+
+        @include mixin.mediaMovil(){
+            margin: .6rem;
+        }
+    }
+
+    &__p{
+        width: 7rem;
+        height: 6.5rem;
+        background: linear-gradient(vars.$card-top 50%, vars.$card-bottom 50%);
+        border-radius: .5rem;
+        color: vars.$red-soft;
+        font-size: 3.3rem;
+        font-weight: 700;
+        @include mixin.flex(center,center,column);
+        box-shadow: 0 9px 4px rgba(0,0,0,.5);
+        position: relative;
+
+        &::after{
+            content: '';
+            position: absolute;
+            width: 8%;
+            height: 10%;
+            background-color: vars.$blue-veryDark;
+            left: 0%;
+            border-radius: 0 .4rem .4rem 0;
+        }
+
+        &::before{
+            content: '';
+            position: absolute;
+            width: 8%;
+            height: 10%;
+            background-color: vars.$blue-veryDark;
+            right: 0%;
+            border-radius: .4rem 0 0 .4rem;
+        }
+
+        @include mixin.mediaMovil(){
+            width: 4rem;
+            height: 4rem;
+            font-size: 1.5rem;
+        }
+    }
+
+    &__h3{
+        margin-top: 1rem;
+        text-transform: uppercase;
+        color: vars.$blue-grayish;
+        font-weight: 700;
+        font-size: .7rem;
+        letter-spacing: .2rem;
+
+        @include mixin.mediaMovil(){
+            font-size: .5rem;
+        }
+    }
+
+    &__socials{
+        @include mixin.flex(center,center,row);
+        width: 50%;
+        position: absolute;
+        bottom: 5%;
+        z-index: 3;
+    
+    }
+
+    &__icon{
+        width: 1.2rem;
+        margin: 1rem;
+
+        @include mixin.mediaMovil(){
+            width: 1.5rem;
+        }
+    }
+        
+    &__hills{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @include mixin.mediaMovil(){
+            & > .timer__img{
+                height: 11rem;
+            }
+        }
+    }
+}

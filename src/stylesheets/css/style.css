@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+a {
+  display: block;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+::selection {
+  background-color: hsl(345deg, 95%, 68%);
+  color: #fff;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  display: block;
+  color: inherit;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsl(345deg, 95%, 68%);
+  border-radius: 10px;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  overflow-x: hidden;
+  background-color: hsl(235deg, 16%, 14%);
+  font-size: 14px;
+}
+
+.timer {
+  position: relative;
+  background: url("../../images/bg-stars.svg") no-repeat center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: hsl(0deg, 0%, 100%);
+}
+@media screen and (max-width: 768px) {
+  .timer {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.timer__h1 {
+  text-align: center;
+  font-size: 1rem;
+  color: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  margin: 6rem 0 3rem 0;
+}
+@media screen and (max-width: 768px) {
+  .timer__h1 {
+    font-size: 1.2rem;
+    margin: 0 0 3rem 0;
+  }
+}
+.timer__countdown {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .timer__countdown {
+    margin-bottom: 12rem;
+  }
+}
+.timer__div {
+  margin: 0.9rem;
+}
+@media screen and (max-width: 768px) {
+  .timer__div {
+    margin: 0.6rem;
+  }
+}
+.timer__p {
+  width: 7rem;
+  height: 6.5rem;
+  background: linear-gradient(hsl(238deg, 21%, 26%) 50%, hsl(240deg, 21%, 22%) 50%);
+  border-radius: 0.5rem;
+  color: hsl(345deg, 95%, 68%);
+  font-size: 3.3rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 9px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.timer__p::after {
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  background-color: hsl(235deg, 16%, 14%);
+  left: 0%;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+.timer__p::before {
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  background-color: hsl(235deg, 16%, 14%);
+  right: 0%;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+@media screen and (max-width: 768px) {
+  .timer__p {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+}
+.timer__h3 {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  color: hsl(237deg, 18%, 59%);
+  font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+}
+@media screen and (max-width: 768px) {
+  .timer__h3 {
+    font-size: 0.5rem;
+  }
+}
+.timer__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 50%;
+  position: absolute;
+  bottom: 5%;
+  z-index: 3;
+}
+.timer__icon {
+  width: 1.2rem;
+  margin: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .timer__icon {
+    width: 1.5rem;
+  }
+}
+.timer__hills {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media screen and (max-width: 768px) {
+  .timer__hills > .timer__img {
+    height: 11rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
